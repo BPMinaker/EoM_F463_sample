@@ -1,9 +1,9 @@
 # Edit this file to enter your team info and vehicle specs
 # Do not alter the format of this file!!!
 
-student_names=["Newton" "Euler"]
-student_numbers=["000000001" "000000002"]
-group_name=["Laws of Motion"]
+student_names = ["Newton" "Euler"]
+student_numbers = ["000000001" "000000002"]
+group_name = "Laws of Motion"
 
 engine_type = 1 # Enter your engine choice here
 # 1 means engine 1 (higher redline)

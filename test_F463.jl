@@ -1,8 +1,5 @@
 using EoM, EoM_X3D, EoM_F463
 
-# # set params to default values
-# params = props()
-
 # read student chosen params
 include(joinpath("students", "my_specs_1.jl"))
 include("fixed_specs.jl")
@@ -20,7 +17,7 @@ result = analyze(output, true)
 
 # write results and animate mode shapes
 summarize(system, result)
-#write_html(system, result)
+summarize(system, result, format = :html)
 
 animate_modes(system, result)
 
