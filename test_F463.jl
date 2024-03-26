@@ -12,11 +12,10 @@ params = props(;mass,Ix,Iy,Iz,hg,wb,fwf,cod,farea,front,rear,drive,engine_type,e
 
 # build equation of motion, analyze
 system = input_F463(u = 20, params)
-output = run_eom!(system, true)
-result = analyze(output, true)
+output = run_eom!(system)
+result = analyze(output)
 
 # write results and animate mode shapes
-summarize(system, result)
 summarize(system, result, format = :html)
 
 animate_modes(system, result)
